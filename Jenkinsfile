@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/your-repo-name.git'
+                git branch: 'main', url: 'https://github.com/Divyanshi-Pathak/assessment_cloud.git'
             }
         }
 
@@ -41,10 +41,10 @@ pipeline {
 
     post {
         success {
-            echo '✅ Docker image built and pushed to Docker Hub successfully!'
+            echo 'success'
         }
         failure {
-            echo '❌ Build or push failed.'
+            echo 'failed'
         }
     }
 }
